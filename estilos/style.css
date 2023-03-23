@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw; 
+    height: 100vh; 
+}
+
+header > h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+main {
+    width: 550px;
+    margin: auto;
+}
+
+main > h1 {
+    padding-bottom: 15px;
+}
+
+main > form > p {
+    margin-bottom: 10px;
+    
+}
+
+p.comentario {
+    font-size: 20px;
+    margin: 5px;
+}
