@@ -7,7 +7,7 @@
 
 html, body {
     width: 100vw; 
-    height: 100vh; 
+    height: 100vh;
 }
 
 header > h1 {
@@ -16,7 +16,7 @@ header > h1 {
 }
 
 main {
-    width: 550px;
+    max-width: 550px;
     margin: auto;
 }
 
@@ -26,10 +26,12 @@ main > h1 {
 
 main > form > p {
     margin-bottom: 10px;
-    
 }
 
-p.comentario {
-    font-size: 20px;
-    margin: 5px;
+p.obs {
+    font-size: 15px;
+}
+
+#inome, #iemail,#isite, #icomentario {
+    width: 370px;
 }
