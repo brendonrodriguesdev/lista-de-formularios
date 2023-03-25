@@ -10,9 +10,13 @@ html, body {
     height: 100vh;
 }
 
-header > h1 {
-    text-align: center;
-    padding: 30px;
+div#questao1 {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+span.negrito {
+    font-weight: bolder;
 }
 
 main {
