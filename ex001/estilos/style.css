@@ -13,6 +13,7 @@ html, body {
 div#questao1 {
     padding: 20px;
     margin-bottom: 30px;
+    text-align: justify;
 }
 
 span.negrito {

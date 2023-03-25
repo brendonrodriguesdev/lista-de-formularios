@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 002</title>
+
+    <link rel="stylesheet" href="estilos/style.css" />
+  </head>
+  <body>
+    <div id="questao2">
+      <p>
+        <span class="negrito">Questão 02.</span> O formulário abaixo representa uma página de cadastro de um usuário em um sistema interno de uma universidade. Utilize as tags de formulário para desenvolvê-lo conforme abaixo:
+      </p>
+    </div>
+
+    <main>
+        <p class="texto1">
+            SISTEMA DE GESTÃO ACADÊMICA
+        </p>
+
+        <P>
+            MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO
+        </P>
+
+        <form action="" method="get" autocomplete="on">
+
+        <p>
+          <label for="ilogin">Login</label>
+          <input type="text" name="login" id="ilogin" required>
+        </p>
+
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16">
+        </p>
+
+        <p>
+            <label for="istatus">Status</label>
+            <select name="status" id="istatus">
+                <option value="">...</option>
+                <option value="Ativo">Ativo</option>
+                <option value="Inativo">Inativo</option>
+            </select>
+        </p>
+
+        <p>
+            Tipo
+            <input type="radio" name="tecnico" id="itecnico"> Técnico
+            <input type="radio" name="professor" id="iprofessor"> Professor
+            <input type="radio" name="aluno" id="ialuno"> Aluno
+        </p>
+
+        <p>
+            <label for="idata">Data criação</label>
+            <input type="date" name="data" id="idata">
+        </p>
+
+        <p>
+            Perfil
+            <input type="radio" name="convidado" id="iconvidado">Convidado
+            <input type="radio" name="adm" id="iadm">Administrador
+        </p>
+
+        <p>
+            <label for="icomentario">Observações</label>
+            <textarea name="comentario" id="icomentario" cols="50" rows="10"></textarea>
+        </p>
+
+        <p>
+            Módulos
+            <input type="checkbox" name="" id="">Compras
+            <input type="checkbox" name="" id="">Biblioteca
+            <input type="checkbox" name="" id="">Acadêmico <br>
+            <input type="checkbox" name="" id="">Documentação
+            <input type="checkbox" name="" id="">Recursos Humanos
+        </p>
+
+        <p>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Excluir">
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
