@@ -24,82 +24,69 @@
       <p>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</p>
 
       <form action="" method="get" autocomplete="on">
-        <p id="login">
+        <div id="labels">
           <label for="ilogin">Login</label>
-          <input type="text" name="login" id="ilogin" required />
-        </p>
-
-        <p id="senha">
           <label for="isenha">Senha</label>
-          <input
-            type="password"
-            name="senha"
-            id="isenha"
-            required
-            minlength="8"
-            maxlength="16"
-          />
-        </p>
-
-        <p id="status">
           <label for="istatus">Status</label>
+          <label>Tipo</label>
+          
+          <label for="idata">Data Criação</label>
+          <label>Perfil</label>
+          <label class="nomeio" for="icomentario">Observações</label>
+          <label>Módulos</label>  
+          
+          <label for="icompras">Compras</label>
+          <label for="ibiblioteca">Biblioteca</label>
+          <label for="iacademico">Acadêmico</label>
+          <label for="idoc">Documentação</label>
+          <label for="irh">Recursos Humanos</label>
+        </div>
+
+        <div id="inputs">
+         
+          <input type="text" name="login" id="ilogin" required/>
+          <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16"/>
+          
           <select name="status" id="istatus">
             <option value="">...</option>
             <option value="Ativo">Ativo</option>
             <option value="Inativo">Inativo</option>
           </select>
-        </p>
+          
+          
+          <div>
+            <input type="radio" name="usu" id="iprof" />
+            <label for="iprof">Professor</label> 
 
-        <p id="tipo">
-          <label>Tipo</label>
-          <input type="radio" name="usu" id="itec" />
-          <label for="itec">Técnico</label>
-          <input type="radio" name="usu" id="iprof" />
-          <label for="iprof">Professor</label>
-          <input type="radio" name="usu" id="ialuno" /><label for="ialuno">Aluno</label>
-        </p>
+            <input type="radio" name="usu" id="itec" />
+            <label for="itec">Técnico</label>
+            
+            <input type="radio" name="usu" id="ialuno" />
+            <label for="ialuno">Aluno</label>
+          </div>
+          
+          <div>
+            <input type="radio" name="conv-adm" id="iconvidado" />
+            <label for="iconvidado" >Convidado</label>
 
-        <p id="data">
-          <label for="idata">Data Criação</label>
+            <input type="radio" name="conv-adm" id="iadm" />
+            <label for="iadm">Administrador</label>
+          </div>
+
+
           <input type="date" name="data" id="idata"/>
-        </p>
+          <textarea name="comentario" id="icomentario" cols="35" rows="5"> </textarea required >
+          <input type="checkbox" name="compras" id="icompras"/>
+          <input type="checkbox" name="biblioteca" id="ibiblioteca"/>
+          <input type="checkbox" name="academico" id="iacademico"/>
+          <input type="checkbox" name="doc" id="idoc"/>
+          <input type="checkbox" name="rh" id="irh"/>
 
-        <p id="perfil">
-          <label>Perfil</label>
-          <input type="radio" name="conv-adm" id="iconvidado" /><label
-            for="iconvidado"
-            >Convidado</label
-          >
-          <input type="radio" name="conv-adm" id="iadm" /><label for="iadm"
-            >Administrador</label
-          >
-        </p>
+          
 
-        <p id="obs">
-            <label 
-            class="nomeio"
-            for="icomentario">Observações</label>
-            <textarea name="comentario"
-              id="icomentario" cols="35" rows="5"></textarea required >
-        </p>
-
-        <p id="modulos">
-          <label>Módulos</label>
-          <input type="checkbox" name="compras" id="icompras"/><label for="icompras">Compras</label>
-
-          <input type="checkbox" name="biblioteca" id="ibiblioteca"/><label for="ibiblioteca">Biblioteca</label>
-
-          <input type="checkbox" name="academico" id="iacademico"/><label for="iacademico">Acadêmico</label>
-
-          <input type="checkbox" name="doc" id="idoc"/><label for="idoc">Documentação</label>
-
-          <input type="checkbox" name="rh" id="irh"/><label for="irh">Recursos Humanos</label>
-        </p>
-
-        <p id="botoes">
           <input type="submit" value="Cadastrar" />
           <input type="reset" value="Excluir" />
-        </p>
+        </div>
       </form>
     </main>
   </body>

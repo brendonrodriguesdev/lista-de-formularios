@@ -37,25 +37,17 @@ p.texto1 {
 main > form {
     padding: 5px;
     padding-left: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+#labels > label {
+    display: block;
 }
 
-form > p {
-    display: row;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* background: red; */
+#inputs > input {
+    display: block;
 }
-
-
-
-
 
 
 
