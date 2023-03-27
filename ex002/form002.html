@@ -11,75 +11,94 @@
   <body>
     <div id="questao2">
       <p>
-        <span class="negrito">Questão 02.</span> O formulário abaixo representa uma página de cadastro de um usuário em um sistema interno de uma universidade. Utilize as tags de formulário para desenvolvê-lo conforme abaixo:
+        <span class="negrito">Questão 02.</span> O formulário abaixo representa
+        uma página de cadastro de um usuário em um sistema interno de uma
+        universidade. Utilize as tags de formulário para desenvolvê-lo conforme
+        abaixo:
       </p>
     </div>
 
     <main>
-        <p class="texto1">
-            SISTEMA DE GESTÃO ACADÊMICA
-        </p>
+      <p class="texto1">SISTEMA DE GESTÃO ACADÊMICA</p>
 
-        <P>
-            MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO
-        </P>
+      <p>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</p>
 
-        <form action="" method="get" autocomplete="on">
-
-        <p>
+      <form action="" method="get" autocomplete="on">
+        <p id="login">
           <label for="ilogin">Login</label>
-          <input type="text" name="login" id="ilogin" required>
+          <input type="text" name="login" id="ilogin" required />
         </p>
 
-        <p>
-            <label for="isenha">Senha</label>
-            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16">
+        <p id="senha">
+          <label for="isenha">Senha</label>
+          <input
+            type="password"
+            name="senha"
+            id="isenha"
+            required
+            minlength="8"
+            maxlength="16"
+          />
         </p>
 
-        <p>
-            <label for="istatus">Status</label>
-            <select name="status" id="istatus">
-                <option value="">...</option>
-                <option value="Ativo">Ativo</option>
-                <option value="Inativo">Inativo</option>
-            </select>
+        <p id="status">
+          <label for="istatus">Status</label>
+          <select name="status" id="istatus">
+            <option value="">...</option>
+            <option value="Ativo">Ativo</option>
+            <option value="Inativo">Inativo</option>
+          </select>
         </p>
 
-        <p>
-            Tipo
-            <input type="radio" name="tecnico" id="itecnico"> Técnico
-            <input type="radio" name="professor" id="iprofessor"> Professor
-            <input type="radio" name="aluno" id="ialuno"> Aluno
+        <p id="tipo">
+          <label>Tipo</label>
+          <input type="radio" name="usu" id="itec" />
+          <label for="itec">Técnico</label>
+          <input type="radio" name="usu" id="iprof" />
+          <label for="iprof">Professor</label>
+          <input type="radio" name="usu" id="ialuno" /><label for="ialuno">Aluno</label>
         </p>
 
-        <p>
-            <label for="idata">Data criação</label>
-            <input type="date" name="data" id="idata">
+        <p id="data">
+          <label for="idata">Data Criação</label>
+          <input type="date" name="data" id="idata"/>
         </p>
 
-        <p>
-            Perfil
-            <input type="radio" name="convidado" id="iconvidado">Convidado
-            <input type="radio" name="adm" id="iadm">Administrador
+        <p id="perfil">
+          <label>Perfil</label>
+          <input type="radio" name="conv-adm" id="iconvidado" /><label
+            for="iconvidado"
+            >Convidado</label
+          >
+          <input type="radio" name="conv-adm" id="iadm" /><label for="iadm"
+            >Administrador</label
+          >
         </p>
 
-        <p>
-            <label for="icomentario">Observações</label>
-            <textarea name="comentario" id="icomentario" cols="50" rows="10"></textarea>
+        <p id="obs">
+            <label 
+            class="nomeio"
+            for="icomentario">Observações</label>
+            <textarea name="comentario"
+              id="icomentario" cols="35" rows="5"></textarea required >
         </p>
 
-        <p>
-            Módulos
-            <input type="checkbox" name="" id="">Compras
-            <input type="checkbox" name="" id="">Biblioteca
-            <input type="checkbox" name="" id="">Acadêmico <br>
-            <input type="checkbox" name="" id="">Documentação
-            <input type="checkbox" name="" id="">Recursos Humanos
+        <p id="modulos">
+          <label>Módulos</label>
+          <input type="checkbox" name="compras" id="icompras"/><label for="icompras">Compras</label>
+
+          <input type="checkbox" name="biblioteca" id="ibiblioteca"/><label for="ibiblioteca">Biblioteca</label>
+
+          <input type="checkbox" name="academico" id="iacademico"/><label for="iacademico">Acadêmico</label>
+
+          <input type="checkbox" name="doc" id="idoc"/><label for="idoc">Documentação</label>
+
+          <input type="checkbox" name="rh" id="irh"/><label for="irh">Recursos Humanos</label>
         </p>
 
-        <p>
-            <input type="submit" value="Cadastrar">
-            <input type="reset" value="Excluir">
+        <p id="botoes">
+          <input type="submit" value="Cadastrar" />
+          <input type="reset" value="Excluir" />
         </p>
       </form>
     </main>

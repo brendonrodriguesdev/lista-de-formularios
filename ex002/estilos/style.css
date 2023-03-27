@@ -27,12 +27,101 @@ main {
 
 main > p {
     padding: 5px;
+    padding-left: 15px;
 }
 
 p.texto1 {
     background-color: #d6b641;
 }
 
-form {
-    margin-top: 20px;
+main > form {
+    padding: 5px;
+    padding-left: 15px;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form > p {
+    display: row;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background: red; */
+}
+
+
+
+
+
+
+
+label {
+    font-weight: bold;
+}
+
+
+
+/* main form p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+} */
+
+/* input#ilogin{
+    margin-left: 104px;
+}
+
+input#isenha {
+    margin-left: 97px;
+} 
+
+select#istatus {
+    margin-left: 98px;
+}
+
+input#itec {
+    margin-left: 113px;
+}
+
+input#idata {
+    margin-left: 50px;
+}
+
+input#iconvidado {
+    margin-left: 105px;
+}
+
+p.login {
+    margin: 5px 0px;
+}
+
+p.senha {
+    margin: 5px 0px;
+}
+
+p.status {
+    margin: 5px 0px;
+}
+
+p.tipo {
+    margin: 5px 0px;
+}
+
+p.data {
+    margin: 5px 0px;
+}
+
+p.perfil {
+    margin: 5px 0px;
+}
+
+p.obs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
