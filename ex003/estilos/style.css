@@ -14,8 +14,44 @@ p.questao1 {
     text-align: justify;
     padding: 10px;
     font-size: 1.2em;
+
+    margin-bottom: 30px;
 }
 
 p > span {
     font-weight: bold;
 }
+
+main {
+    border: 1px solid green;
+
+    max-width: 700px;
+
+    margin: auto;
+    padding: 15px;
+}
+
+/* Cadastro geral */
+fieldset#caixa-geral {
+    max-width: 600px;
+    margin: auto;
+    border: 2px solid rgba(0, 128, 0, 0.301);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Dados pessoais */
+main form div#dados-p {
+    margin: 10px;
+    width: 300px;
+    background-color: aqua;
+    
+}
+
+/* fieldset#bloco1 {
+    border: 1px solid rgba(0, 128, 0, 0.301);
+
+    padding: 10px;
+} */

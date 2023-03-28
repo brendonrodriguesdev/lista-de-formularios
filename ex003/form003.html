@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <p class="questao1">
-        <span id="negrito">Questão 03.</span> Construir um formulário em HTML e aplicar as regra css de forma que fique semelhante a
-        imagem abaixo:
+      <span id="negrito">Questão 03.</span> Construir um formulário em HTML e
+      aplicar as regra css de forma que fique semelhante a imagem abaixo:
     </p>
-</body>
+
+    <main>
+        <form action="" method="get autocomplete="on">
+            <fieldset id="caixa-geral">
+
+            <legend>Cadastro Geral</legend>
+
+            <div id="dados-p">
+
+                <fieldset id="bloco1">
+
+                  <legend>Dados pessoais</legend>
+                    <label for="inome">Nome Completo:</label>
+                    <input type="text" name="nome" id="inome" />
+
+                    <label for="iprof">Profissão:</label>
+                    <select name="prof" id="iprof">
+                      <option value=""></option>
+                      <option value="Marceneiro">Marceneiro</option>
+                      <option value="Advogado">Advogado</option>
+                      <option value="Médico">Médico</option>
+                      <option value="Dev">Desenvolvedor</option>
+                      <option value="Eng.">Engenheiro</option>
+                    </select>
+                </fieldset>
+            </div>
+
+            <fieldset>
+                <legend>Localização</legend>
+            </fieldset>
+            
+            </fieldset>
+
+          
+        </form>
+    </main>
+  </body>
 </html>
