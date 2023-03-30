@@ -62,6 +62,22 @@ section.caixa2 {
 
 fieldset.faixa-etaria {
     padding: 10px;;
-    border: 1px solid rgba(0, 128, 0, 0.466);
+    border: 1px solid rgba(0, 128, 0, 0.527);
     columns: 2;
+}
+
+section.caixa3 > fieldset.group-sports {
+    border: 1px solid green;
+    padding: 10px;
+}
+
+fieldset.comentario {
+    padding: 10px;
+    margin: 15px 0px;
+
+    border: 1px solid rgba(0, 128, 0, 0.527);
+}
+
+fieldset.comentario {
+    display: inline-block;
 }

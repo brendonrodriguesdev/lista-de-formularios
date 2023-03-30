@@ -19,8 +19,6 @@
         <fieldset id="principal">
           <legend class="legenda">Cadastro Geral</legend>
 
-          <form action="" method="get" autocomplete="on">
-
             <section class="caixa1">
               <div class="dados-pessoais">
                 <fieldset class="dados-localiza">
@@ -66,7 +64,52 @@
                 <label for="60+">mais de 60</label>
               </fieldset>
             </section>
-          </form>
+
+            <section class="caixa3">
+              <fieldset class="group-sports">
+                <legend class="legenda">Esportes que pratica</legend>
+                <div>
+                  <input type="checkbox" name="esporte" id="fut-campo">
+                  <label for="fut-campo">Futebol de campo</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" name="esporte" id="fut-salao">
+                  <label for="fut-salao">Futebol de salão</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" name="esportes" id="fut-society">
+                  <label for="fut-society">Futebol society</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" name="esportes" id="vol-quad">
+                  <label for="vol-quad">Volley de quadra</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" name="esportes" id="vol-praia">
+                  <label for="vol-praia">Volley de praia</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" name="esportes" id="nat-pisci">
+                  <label for="nat-pisci">Natação em piscina</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" name="esportes" id="nat-mar">
+                  <label for="nat-mar">Natação em mar aberto</label>
+                </div>
+              </fieldset>
+            </section>
+        </fieldset>
+
+        <fieldset class="comentario">
+          <legend class="legenda">Comentário</legend>
+          <label for="imsg">Mensagem:</label><br>
+          <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
         </fieldset>
       </form>
     </section>
