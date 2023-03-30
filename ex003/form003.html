@@ -15,7 +15,7 @@
 
   <main>
     <section>
-      <form action="" method="get" autocomplete="on">
+      <form action="cadastro.php" method="post" autocomplete="on">
         <fieldset id="principal">
           <legend class="legenda">Cadastro Geral</legend>
 
@@ -50,17 +50,17 @@
             <section class="caixa2">
               <fieldset class="faixa-etaria">
                 <legend class="legenda">Faixa etária</legend>
-                <input type="radio" name="idade" id="1-20" required>
+                <input type="radio" name="idade" id="1-20" required value="1-20">
                 <label for="1-20">até 20 anos</label><br>
-                <input type="radio" name="idade" id="20-30" required>
+                <input type="radio" name="idade" id="20-30" required value="20-30">
                 <label for="20-30">mais de 20 até 30 anos</label><br>
-                <input type="radio" name="idade" id="30-40" required>
+                <input type="radio" name="idade" id="30-40" required value="30-40">
                 <label for="30-40">mais de 30 até 40 anos</label><br>
-                <input type="radio" name="idade" id="40-50" required>
+                <input type="radio" name="idade" id="40-50" required value="40-50">
                 <label for="40-50">mais de 40 até 50 anos</label><br>
-                <input type="radio" name="idade" id="50-60" required>
+                <input type="radio" name="idade" id="50-60" required value="50-60">
                 <label for="50-60">mais de 50 até 60 anos</label><br>
-                <input type="radio" name="idade" id="60+" required>
+                <input type="radio" name="idade" id="60+" required value="60+">
                 <label for="60+">mais de 60</label>
               </fieldset>
             </section>
@@ -69,48 +69,55 @@
               <fieldset class="group-sports">
                 <legend class="legenda">Esportes que pratica</legend>
                 <div>
-                  <input type="checkbox" name="esporte" id="fut-campo">
+                  <input type="checkbox" name="esporte" id="fut-campo" value="Futebol de campo">
                   <label for="fut-campo">Futebol de campo</label>
                 </div>
 
                 <div>
-                  <input type="checkbox" name="esporte" id="fut-salao">
+                  <input type="checkbox" name="esporte" id="fut-salao" value="Futebol de salão">
                   <label for="fut-salao">Futebol de salão</label>
                 </div>
 
                 <div>
-                  <input type="checkbox" name="esportes" id="fut-society">
+                  <input type="checkbox" name="esportes" id="fut-society" value="Futebol society">
                   <label for="fut-society">Futebol society</label>
                 </div>
 
                 <div>
-                  <input type="checkbox" name="esportes" id="vol-quad">
+                  <input type="checkbox" name="esportes" id="vol-quad" value="Volley de quadra">
                   <label for="vol-quad">Volley de quadra</label>
                 </div>
 
                 <div>
-                  <input type="checkbox" name="esportes" id="vol-praia">
+                  <input type="checkbox" name="esportes" id="vol-praia" value="Volley de praia">
                   <label for="vol-praia">Volley de praia</label>
                 </div>
 
                 <div>
-                  <input type="checkbox" name="esportes" id="nat-pisci">
+                  <input type="checkbox" name="esportes" id="nat-pisci" value="Natação em piscina">
                   <label for="nat-pisci">Natação em piscina</label>
                 </div>
 
                 <div>
-                  <input type="checkbox" name="esportes" id="nat-mar">
+                  <input type="checkbox" name="esportes" id="nat-mar" value="Natação em mar aberto">
                   <label for="nat-mar">Natação em mar aberto</label>
                 </div>
               </fieldset>
             </section>
         </fieldset>
 
-        <fieldset class="comentario">
-          <legend class="legenda">Comentário</legend>
-          <label for="imsg">Mensagem:</label><br>
-          <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
-        </fieldset>
+        <section class="caixa4">
+          <fieldset class="comentario">
+            <legend class="legenda">Comentário</legend>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+          </fieldset>
+        </section>
+
+        <section class="caixa-butao">
+          <div><input type="submit" value="Enviar"></div>
+          <div><input type="reset" value="Limpar"></div>
+        </section>
       </form>
     </section>
   </main>
