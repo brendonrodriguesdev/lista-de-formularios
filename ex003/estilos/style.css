@@ -24,34 +24,41 @@ p > span {
 
 main {
     border: 1px solid green;
-
     max-width: 700px;
-
     margin: auto;
     padding: 15px;
 }
 
-/* Cadastro geral */
-fieldset#caixa-geral {
-    max-width: 600px;
-    margin: auto;
-    border: 2px solid rgba(0, 128, 0, 0.301);
-
+section.caixa1 {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
-/* Dados pessoais */
-main form div#dados-p {
-    margin: 10px;
-    width: 300px;
-    background-color: aqua;
-    
+div.dados-pessoais {
+    margin: 15px 0px;
 }
 
-/* fieldset#bloco1 {
+fieldset#principal {
     border: 1px solid rgba(0, 128, 0, 0.301);
-
     padding: 10px;
-} */
+    color: green;
+}
+
+fieldset.dados-localiza {
+    padding: 10px;
+    width: 230px;
+    border: 1px solid rgba(0, 128, 0, 0.527);
+}
+
+legend.legenda {
+    border: 1px solid green;
+    padding: 5px;
+ }
+
+label {
+    font-size: 0.8em;
+}
+
+select {
+    width: 12.5em;
+}

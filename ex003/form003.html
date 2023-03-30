@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilos/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <p class="questao1">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="estilos/style.css" />
+  <title>Document</title>
+</head>
+<body>
+  <p class="questao1">
       <span id="negrito">Questão 03.</span> Construir um formulário em HTML e
       aplicar as regra css de forma que fique semelhante a imagem abaixo:
-    </p>
+  </p>
 
-    <main>
-        <form action="" method="get autocomplete="on">
-            <fieldset id="caixa-geral">
+  <main>
+      <section>
+        <form action="" method="get"          autocomplete="on">
+          <fieldset id="principal">
+            <legend class="legenda">Cadastro Geral</legend>
 
-            <legend>Cadastro Geral</legend>
+            <form action="" method="get" autocomplete="on">
 
-            <div id="dados-p">
-
-                <fieldset id="bloco1">
-
-                  <legend>Dados pessoais</legend>
-                    <label for="inome">Nome Completo:</label>
-                    <input type="text" name="nome" id="inome" />
-
-                    <label for="iprof">Profissão:</label>
+              <section class="caixa1">
+                <div class="dados-pessoais">
+                  <fieldset class="dados-localiza">
+                    <legend class="legenda">Dados pessoais</legend>
+                    <label for="inome">Nome completo:
+                    </label><br>
+                    <input type="text" name="nome" id="inome" required><br>
+                    <label for="iprof">Sua profissão:</label><br>
                     <select name="prof" id="iprof">
-                      <option value=""></option>
-                      <option value="Marceneiro">Marceneiro</option>
+                      <option value=""> </option>
                       <option value="Advogado">Advogado</option>
                       <option value="Médico">Médico</option>
                       <option value="Dev">Desenvolvedor</option>
                       <option value="Eng.">Engenheiro</option>
                     </select>
-                </fieldset>
-            </div>
+                  </fieldset>
+                </div>
+                <div class="dados-pessoais">
+                  <fieldset class="dados-localiza">
+                    <legend class="legenda">Localização</legend>
+                    <label for="iemail">E-mail:</label><br>
+                    <input type="email" name="email" id="iemail" required><br>
+                    <label for="irua">Rua:</label><br>
+                    <input type="text" name="rua" id="irua" required>
+                  </fieldset>
+                </div>
+              </section>
 
-            <fieldset>
-                <legend>Localização</legend>
-            </fieldset>
-            
-            </fieldset>
-
-          
+              
+            </form>
+          </fieldset>
         </form>
-    </main>
-  </body>
+      </section>
+  </main>
+</body>
 </html>
