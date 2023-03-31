@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <h1>
+        Exercício formulário 004
+    </h1>
+    <main>
+        <span>
+            Não é associado? Faça seu cadastro
+        </span>
+        <span class="vazio">
+            Lorem ipsum dolor sit.
+        </span>
+        <form action="#" method="get" autocomplete="on">
+            <section id="dados1 ">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required placeholder="Digite seu nome">
+                </div>
+                <div>
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" pattern="/^([0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}|[0-9]{2}\.?[0-9]{3}\.?[0-9]{3}\/?[0-9]{4}\-?[0-9]{2})$/" placeholder="123.456.789-00/00.000.000/0001-00" maxlength="18">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required placeholder="Digite seu email">
+                </div>
+                <div>
+                    <label for="website">Website</label>
+                    <input type="url" name="website" id="website" required placeholder="Digite seu site">
+                </div>
+            </section>
+
+            <div>
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco" required placeholder="Digite seu endereço">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
