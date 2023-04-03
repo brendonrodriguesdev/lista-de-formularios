@@ -18,38 +18,29 @@ h1 {
     text-align: center;
 }
 
-main {
+form {
     border: 1px solid black;
-    max-width: 800px;
-    margin: auto;
+    padding: 10px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-div.cabecalho {
+div#principal {
     display: flex;
+}
+
+div.caixa-label {
+    width: 10%;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.caixa-input {
+    width: 90%;
+}
+
+div.caixa-input > input {
     width: 100%;
-}
-
-p.frase {
-    background-color: rgb(0, 204, 255);
-    width: 60%;
-    height: 25px;
-    padding: 3px;
-    font-weight: bolder;
-    margin-right: 3px;
-}
-
-p.em-branco {
-    background-color: darkblue;
-    width: 40%;
-    height: 25px;
-    padding: 3px;
-}
-
-div.grupo1 {
-    display: flex;
-}
-
-.grupo > label {
-    width: 300px;
-    margin-right: 10px;
+    height: 23px;
+    margin-left: 5px;
 }
