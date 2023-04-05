@@ -51,35 +51,38 @@ div#container {
 }
 
 div.container1 {
-    border: 1px solid blue;
     width: 50%;
 }
 
 div.container2 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 50%;
+    margin-left: 3px;
 }
 
 div.caixa1 {
-    /* width: 100%; */
+    width: 100%;
     display: flex;
 }
 
 div.caixa-label1 {
     width: 40% ;
-    background-color: aqua;
     font-weight: bold;
     margin: 5px 0px;
 }
 
-div.caixa-input1 {
+div.caixa-label1 > label {
     width: 100%;
-    /* margin-left: 70px; */
+}
+
+div.caixa-input1 {
+    width: 60%;
 }
 
 div.caixa-input1 > input {
     height: 23px;
     margin: 5px 0px;
+    width: 100%;
 }
 
 div.caixa2 {
@@ -88,17 +91,22 @@ div.caixa2 {
 }
 
 div.caixa-label2 {
-    border: 1px solid black;
-    width: 40%;
+    width: 40% ;
     font-weight: bold;
+    margin: 5px 0px;
+    text-align: center;
+}
+
+div.caixa-label2 > label {
+    width: 100%;
 }
 
 div.caixa-input2 {
-    width: auto;
+    width: 70%;
 }
 
 div.caixa-input2 > input {
-    border: 1px solid black;
     height: 23px;
+    margin: 5px 0px;
     width: 100%;
 }
