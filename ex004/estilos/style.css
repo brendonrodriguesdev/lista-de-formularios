@@ -111,3 +111,15 @@ div.caixa-input2 > input {
     margin: 5px 0px;
     width: 100%;
 }
+ div#genero {
+    display: flex;
+    align-items: center;
+ }
+
+ div.sexo > input.radio {
+    width: 25px;
+ }
+
+ div.sexo > label {
+    font-weight: bold;
+ }
