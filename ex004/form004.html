@@ -121,7 +121,7 @@
                     <div class="caixa-label2">
                         <label for="uf">UF</label>
                     </div>
-                    <div class="caixa-input2">
+                    <div class="caixa-input2 select">
                         <select name="uf" id="uf" required>
                             <option value="AC">Acre</option>
                                 <option value="AL">Alagoas</option>
@@ -175,10 +175,78 @@
                         <label for="sxf">F</label>
                     </div>
                 </div>
+
+                <div class="caixa2">
+                    <div class="caixa-label2">
+                        <label class="e-civil" for="e-civil">Est.Civil</label>
+                    </div>
+                    <div class="caixa-input2">
+                        <select name="e-civil" id="e-civil" required>
+                            <option value="Solteiro">Solteiro</option>
+                            <option value="Casado">Casado</option>
+                            <option value="viuvo">Viúvo</option>
+                            <option value="divorciado">Divorciado</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="caixa2">
+                    <div class="caixa-label2">
+                        <label for="senha">Senha</label>
+                    </div>
+                    <div class="caixa-input2">
+                        <input type="password" name="senha" id="senha" required 
+                        maxlength="8">
+                    </div>
+                </div>
             </div>
-                
-            
         </div>
+
+        <p>
+            Deseja receber informações sobre os seguinter assuntos abaixo:
+        </p>
+
+        <section>
+            <div class="linha1">
+                <input type="checkbox" name="tecnologia" id="tecnologia">
+                <label for="tecnologia">Tecnologia</label>
+                <input type="checkbox" name="esportes" id="esportes">
+                <label for="esportes">Esportes</label>
+                <input type="checkbox" name="automoveis" id="automoveis">
+                <label for="automoveis">Automoveis</label>
+                <input type="checkbox" name="culinaria" id="culinaria">
+                <label for="culinaria">Culinária</label>
+                <input type="checkbox" name="politica" id="politica">
+                <label for="politica">Política</label>
+                <input type="checkbox" name="policial" id="policial">
+                <label for="policial">Policial</label>
+                <input type="checkbox" name="tempo" id="tempo">
+                <label for="tempo">Tempo</label>
+            </div>
+
+            <div class="linha2">
+                <input type="checkbox" name="cultura" id="cultura">
+                <label for="cultura">Cultura</label>
+
+                <input type="checkbox" name="economia" id="economia">
+                <label for="economia">Economia</label>
+
+                <input type="checkbox" name="jogos" id="jogos">
+                <label for="jogos">Jogos</label>
+
+                <input type="checkbox" name="educacao" id="educacao">
+                <label for="educacao">Educação</label>
+
+                <input type="checkbox" name="viagem" id="viagem">
+                <label for="viagem">Viagem</label>
+
+                <input type="checkbox" name="empregos" id="empregos">
+                <label for="empregos">Empregos</label>
+
+                <input type="checkbox" name="moda-estilo" id="moda-estilo">
+                <label for="moda-estilo">Moda e Estilo</label>
+            </div>
+        </section>
     </form>
 </body>
 </html>

@@ -21,7 +21,7 @@ h1 {
 form {
     border: 1px solid black;
     padding: 10px;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -91,7 +91,7 @@ div.caixa2 {
 }
 
 div.caixa-label2 {
-    width: 25% ;
+    width: 30% ;
     font-weight: bold;
     margin: 5px 0px;
     text-indent: 5px;
@@ -102,7 +102,7 @@ div.caixa-label2 > label {
 }
 
 div.caixa-input2 {
-    width: 75%;
+    width: 70%;
 }
 
 div.caixa-input2 > input {
@@ -110,6 +110,11 @@ div.caixa-input2 > input {
     margin: 5px 0px;
     width: 100%;
 }
+
+.select {
+    margin-top: 3px;
+}
+
  div#genero {
     display: flex;
     align-items: center;
@@ -122,3 +127,24 @@ div.caixa-input2 > input {
  div.sexo > label {
     font-weight: bold;
  }
+
+p {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section > div > label {
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-right: 5px;
+}
+
+section > .linha1 {
+    margin-bottom: 10px;
+}
+
+section > .linha2 {
+    margin-bottom: 10px;
+}
