@@ -19,7 +19,6 @@ h1 {
 }
 
 form {
-    border: 1px solid black;
     padding: 10px;
     max-width: 700px;
     margin: 0 auto;
@@ -147,4 +146,8 @@ section > .linha1 {
 
 section > .linha2 {
     margin-bottom: 10px;
+}
+
+div#botoes {
+    margin-top: 30px;
 }
