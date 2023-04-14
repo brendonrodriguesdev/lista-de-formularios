@@ -110,6 +110,14 @@ div.caixa-input2 > input {
     width: 100%;
 }
 
+div.caixa-input2 > select {
+    width: 100%;
+}
+
+select.altura-input {
+    height: 25px;
+}
+
 .select {
     margin-top: 3px;
 }
